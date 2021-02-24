@@ -56,7 +56,8 @@ export function Countdown() {
           disabled
           className={`${styles.countdownButton}`}
         >
-          Ciclo Encerrado
+          Ciclo encerrado
+          <img src="icons/check-icon.png" alt="Checado"/>
         </button>
       ) : (
           <>

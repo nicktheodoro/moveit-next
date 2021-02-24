@@ -77,4 +77,9 @@
   background: var(--white);
   color: var(--title);
   cursor: not-allowed; /* muda o cursor pra: não possível clicar */
+  border-bottom: 3px solid var(--green);
+}
+
+.countdownButton:disabled img {
+  margin-left: 1.2rem;
 }
