@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { ChallengesContext } from '../contexts/ChallengesContext';
 import styles from '../styles/components/Countdown.module.css';
 
 let countdownTimeout: NodeJS.Timeout; // retorna o tipo do setTimeout
 
 export function Countdown() {
+  const { startNewChallenge } = useContext(ChallengesContext);
+
   const [time, setTime] = useState(0.1 * 60); // determina a quantidades de minutos do contador
   const [isActive, setIsActive] = useState(false); // determina se o estado do contador está parado(false) ou ativo(true)
   const [hasFineshed, setHasFinished] = useState(false); // determina se o contador finalizou(true) a contagem ou não(false)
@@ -33,6 +36,7 @@ export function Countdown() {
     } else if (isActive && time === 0) { // verifica se o contador está ativo e time = 0 pra sabermos que finalizou a contagem
       setHasFinished(true);
       setIsActive(false);
+      startNewChallenge();
     }
   }, [isActive, time]) //dispara todas vez que o estado do contador mudar active(true) ou quando o tempo mudar (fazendo o contador continuar rodando)
 

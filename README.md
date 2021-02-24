@@ -8,7 +8,9 @@ Através de estados + hooks + JS foi elaborado um contador dinâmico para a apli
 conjunto com useEffect() podemos atulizar o estado do contador a cada segundo e com isso gerando um ContDown 
 totalmente funcional.
 
+Utilizando a API de Contexts do react foi desenvolvida uma lógica de contexto para permitir a comunicação entre os componentes, possibilitando que seja criado um contexto em que a aplicação irá disparar diversos eventos e 
+funcões ligadas a desafios confome o uso da aplicação. -- ChallengesContext.tsx 
 
-Em construção......02/05 dias.
+Em construção......03/05 dias.
 
 Tecngologias do projeto: HTML, CSS, CSSMODULES, JAVASCRIPT, TYPESCRIPT, REACT, NEXTJS.
