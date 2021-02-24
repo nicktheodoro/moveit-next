@@ -1,4 +1,4 @@
-Projeto criado durante o bootcamp da @Rockeatseat.
+Projeto criado durante o bootcamp da @Rocketseat.
 
 Projeto criado utilizando next.js um framework React muito utilizado atualmente para criação de páginas
 dinâmicas e suas funcionalidades. Neste projeto também está incluido css modules para a criação da estilização
