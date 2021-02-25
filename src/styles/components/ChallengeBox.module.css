@@ -32,11 +32,9 @@
   
   line-height: 1.4;
 
-  max-width: 80%;
+  max-width: 70%;
   
   margin-top: 3rem;
-
-  text-align: left;
 }
 
 .challengeNotActive p img {
@@ -79,6 +77,7 @@
 
 .challengeActive main p {
   line-height: 1.5;
+  
 }
 
 .challengeActive footer {
