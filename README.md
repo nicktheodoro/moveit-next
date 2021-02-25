@@ -14,3 +14,5 @@ funcões ligadas a desafios confome o uso da aplicação. -- ChallengesContext.t
 Em construção......03/05 dias.
 
 Tecngologias do projeto: HTML, CSS, CSSMODULES, JAVASCRIPT, TYPESCRIPT, REACT, NEXTJS.
+
+testando commit
