@@ -1,20 +1,11 @@
 <h1 align="center">
-  <img width="400px" src="./.github/images/logo.svg" />
+  <img width="400px" src="/.github/images/logo-full.svg" />
   <br />
-  <a href="https://www.linkedin.com/in/alexandre-costa-401699199">
-    <img alt="Linkedin" src="https://img.shields.io/badge/-Alexandre%20Costa-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
-  </a>
-  <a href="https://github.com/nicktheodoro/moveit-next/blob/master/LICENSE.txt">
+  <a href="https://github.com/nicktheodoro/moveit-next/blob/main/LICENSE.txt">
     <img alt="GitHub license" src="https://img.shields.io/github/license/nicktheodoro/moveit-nlw4?logo=mint&style=flat-square">
   </a>
   <a href="https://github.com/nicktheodoro/moveit-next/issues">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
-  </a>
-  <a href="https://github.com/nicktheodoro/moveit-next/issues?q=is%3Aissue+is%3Aclosed">
-    <img alt="GitHub issues" src="https://badgen.net/github/closed-issues/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
-  </a>
-  <a href="https://github.com/nicktheodoro/moveit-next/network">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
   </a>
   <a href="https://github.com/nicktheodoro/moveit-next/stargazers">
     <img alt="GitHub stars" src="https://img.shields.io/github/stars/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
@@ -30,7 +21,10 @@
   <a href="#memo-Licença">Licença</a>
 </p>
 
-<img src="./.github/images/nlw4-image-documentation.svg" />
+<img src=".github/images/print1.png" />
+<img src=".github/images/print2.png" />
+<img src=".github/images/print3.png" />
+<img src=".github/images/print4.png" />
 
 ## :page_facing_up: Descrição
 O Move.it é um app que usa a técnica de Pomodoro, esse app faz com que pessoas que passa muito tempo na frente do computador realizar exercícios físicos.
@@ -81,16 +75,15 @@ $ npm run dev
 ## :man: Autor
 
 <a href="https://github.com/nicktheodoro/">
- <img src="https://avatars0.githubusercontent.com/u/61118233?s=400&u=37870397a9363ce5e768975c05e95a5f5d323ca1&v=4" width="70px;" alt=""/>
+ <img src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws" width="70px;" alt=""/>
  <br />
  <sub><b>Alexandre Costa</b></sub>
 </a>
 
 
-Feito com ❤️ por Alexandre Costa :wave::wave: Entre em contato!🚀
+Feito com ❤️ por Nicolas Theodoro :wave::wave: Entre em contato!🚀
 
 <a href="https://www.linkedin.com/in/nicolas-theodoro">
-  <img alt="Linkedin" src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws">
 </a>
 
 
