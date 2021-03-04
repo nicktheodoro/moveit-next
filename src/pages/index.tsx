@@ -1,64 +1,32 @@
 import Head from 'next/head';
-import { GetServerSideProps } from 'next';
 
-import { ChallengesProvider } from '../contexts/ChallengesContext';
-import { CountdownProvider } from '../contexts/CountdownContext';
+import { FiArrowRight, FiGithub } from 'react-icons/fi';
 
-import { ExperienceBar } from "../components/ExperienceBar";
-import { Profile } from "../components/Profile";
-import { CompletedChallenges } from "../components/CompletedChallenges";
-import { Countdown } from "../components/Countdown";
-import { ChallengeBox } from "../components/ChallengeBox";
+import style from '../styles/pages/Login.module.css';
 
-import styles from '../styles/pages/Home.module.css';
-
-interface HomeProps {
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number; 
-}
-
-export default function Home(props: HomeProps) {
-
+export default function Login() {
   return (
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Inicio | move.it</title>
-        </Head>
-
-        <ExperienceBar />
-
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ChallengesProvider>
+    <div className={style.container}>
+      <Head>
+        <title>Login | move.it</title>
+      </Head>
+      <img src="./background.png" alt="Logo"/>
+      <section>
+        <img src="./logo-white.svg" alt="Move-it" />
+        <div>
+          <h1>Bem-vindo</h1>
+          <div className={style.textLogin}>
+            <FiGithub size={40} color='#fff' />
+            <p>Faça login com seu Github para começar</p>
+          </div>
+          <div className={style.inputContainer}>
+            <input type="text" placeholder="Digite seu username" />
+            <button>
+              <FiArrowRight size={40} color='#fff' />
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
   );
-}
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
-
-  return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted),
-    }
-  }
 }
