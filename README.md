@@ -1,16 +1,6 @@
-<h1 align="center">
+<header align="center">
   <img width="400px" src="src/.github/images/logo-full.svg" />
-  <br />
-  <a href="https://github.com/nicktheodoro/moveit-next/blob/main/LICENSE.txt">
-    <img alt="GitHub license" src="https://img.shields.io/github/license/nicktheodoro/moveit-nlw4?logo=mint&style=flat-square">
-  </a>
-  <a href="https://github.com/nicktheodoro/moveit-next/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
-  </a>
-  <a href="https://github.com/nicktheodoro/moveit-next/stargazers">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
-  </a>
-</h1>
+</header>
 <p align="center">
   <a href="#page_facing_up-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#art-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
