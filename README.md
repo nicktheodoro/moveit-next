@@ -1,17 +1,100 @@
-Projeto criado durante o bootcamp da @Rocketseat na trilha de React
+<h1 align="center">
+  <img width="400px" src="./.github/images/logo.svg" />
+  <br />
+  <a href="https://www.linkedin.com/in/alexandre-costa-401699199">
+    <img alt="Linkedin" src="https://img.shields.io/badge/-Alexandre%20Costa-29B6D1?label=Linkedin&logo=linkedin&style=flat-square">
+  </a>
+  <a href="https://github.com/nicktheodoro/moveit-next/blob/master/LICENSE.txt">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/nicktheodoro/moveit-nlw4?logo=mint&style=flat-square">
+  </a>
+  <a href="https://github.com/nicktheodoro/moveit-next/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
+  </a>
+  <a href="https://github.com/nicktheodoro/moveit-next/issues?q=is%3Aissue+is%3Aclosed">
+    <img alt="GitHub issues" src="https://badgen.net/github/closed-issues/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
+  </a>
+  <a href="https://github.com/nicktheodoro/moveit-next/network">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
+  </a>
+  <a href="https://github.com/nicktheodoro/moveit-next/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/nicktheodoro/moveit-nlw4?color=29B6D1&style=flat-square">
+  </a>
+</h1>
+<p align="center">
+  <a href="#page_facing_up-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#art-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#clipboard-Funcionalidades">Funcionalidades</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#closed_book-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#man-Autor">Autor</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-Licença">Licença</a>
+</p>
+
+<img src="./.github/images/nlw4-image-documentation.svg" />
+
+## :page_facing_up: Descrição
+O Move.it é um app que usa a técnica de Pomodoro, esse app faz com que pessoas que passa muito tempo na frente do computador realizar exercícios físicos.
+
+## :art: Layout
+Você pode acessar o Layout pelo <a href="https://www.figma.com">Figma<a> atravês <a href="https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0">desse link<a>.
+
+## 🛠 Tecnologias
+Este projeto foi desenvolvido com as seguintes tecnologias
+
+- [Next.js](https://nextjs.org/)
+- [React.js](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [StyledComponents](https://styled-components.com/)
+
+## :clipboard: Funcionalidades
+- [x] Iniciar um ciclo de 25 minutos.
+- [x] Abadornar ciclo.
+- [x] Dispara um efeito sonoro quando o ciclo chega ao fim.
+- [x] Manda uma notificação quando o ciclo chega ao seu fim.
+- [x] A cada ciclo libera um novo desafio.
+- [x] Usuário ganha XP a cada desafio concluído.
+- [x] Usuário pode subir de nível.
 
 
-Projeto criado utilizando next.js um framework React muito utilizado atualmente para criação de páginas
-dinâmicas e suas funcionalidades. Neste projeto também está incluido css modules para a criação da estilização
-do conteúdo nesta aplicação.
+## :closed_book: Instalação
 
-Através de estados + hooks + JS foi elaborado um contador dinâmico para a aplicação, utilizando o setTimeOut em
-conjunto com useEffect() podemos atulizar o estado do contador a cada segundo e com isso gerando um ContDown 
-totalmente funcional.
+### Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-Utilizando a API de Contexts do react foi desenvolvida uma lógica de contexto para permitir a comunicação entre os componentes, possibilitando que seja criado um contexto em que a aplicação irá disparar diversos eventos e 
-funcões ligadas a desafios confome o uso da aplicação. -- ChallengesContext.tsx 
+```bash
+# Clone este repositório.
+$ git clone https://github.com/nicktheodoro/moveit-next.git
 
-Acrescentado a funcionalidade cookies na aplicação para que o usuário possa continuar avançando de nível e suas informações persistam dentro de ChallengesContext. Para isso foi utilizada a biblioteca JS-COOKIE em conjunto com o "backEnd" que roda no Next.js fazendo com que as informações fiquem salvas no app e não apenas no navegar. Com isso é possibilitado que o usuário continue acessando as informações mesmo que feche o navegador ou abra outras abas da aplicação.
+# Vá para a pasta moveit-nlw4
+$ cd moveit-nlw4
 
-Tecngologias do projeto: HTML, CSS, CSSMODULES, JAVASCRIPT, TYPESCRIPT, REACT, NEXTJS.
+# Instale as dependências
+$ npm install 
+
+# Execute aplicação
+$ npm run dev
+
+# O app vai está rodando na porta 3000 - acesse <http://localhost:3000>
+```
+
+## :man: Autor
+
+<a href="https://github.com/nicktheodoro/">
+ <img src="https://avatars0.githubusercontent.com/u/61118233?s=400&u=37870397a9363ce5e768975c05e95a5f5d323ca1&v=4" width="70px;" alt=""/>
+ <br />
+ <sub><b>Alexandre Costa</b></sub>
+</a>
+
+
+Feito com ❤️ por Alexandre Costa :wave::wave: Entre em contato!🚀
+
+<a href="https://www.linkedin.com/in/nicolas-theodoro">
+  <img alt="Linkedin" src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws">
+</a>
+
+
+## :memo: Licença
+
+Copyright © 2021 [Nicolas Theodoro](https://github.com/nicktheodoro).<br />
+This project is [MIT](./LICENSE.txt) licensed.

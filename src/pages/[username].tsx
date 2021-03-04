@@ -10,55 +10,74 @@ import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
 import { ChallengeBox } from "../components/ChallengeBox";
 
-import styles from '../styles/pages/Home.module.css';
+import styles from '../styles/pages/HomeApp.module.css';
 
-interface HomeProps {
+interface IUserGithub {
+  name: string;
+  avatar_url: string;
+}
+
+interface ProfileData {
+  user: IUserGithub;
   level: number;
   currentExperience: number;
-  challengesCompleted: number; 
+  challengesCompleted: number;
 }
 
-export default function Home(props: HomeProps) {
+export default function HomeApp({
+  user,
+  level,
+  challengesCompleted,
+  currentExperience
+}: ProfileData) {
 
-  return (
-    <ChallengesProvider
-      level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
+return (
+  <ChallengesProvider
+      level={level}
+      challengesCompleted={challengesCompleted}
+      currentExperience={currentExperience}
+  >
       <div className={styles.container}>
-        <Head>
-          <title>Inicio | move.it</title>
-        </Head>
+          <Head>
+              <title>Início | Move.it</title>
+          </Head>
+          
+          <ExperienceBar />
 
-        <ExperienceBar />
-
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+          <CountdownProvider>
+              <section>
+                  <div>
+                      <Profile user={user} />
+                      <CompletedChallenges />
+                      <Countdown />
+                  </div>
+                  <div>
+                      <ChallengeBox />
+                  </div>
+              </section>
+          </CountdownProvider>
       </div>
-    </ChallengesProvider>
-  );
+  </ChallengesProvider>
+)
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getServerSideProps: GetServerSideProps = async ({ params, req }) => {
 
-  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
+  const { username } = params
+
+  const { level, currentExperience, challengesCompleted } = req.cookies
+
+  const response = await fetch(`https://api.github.com/users/${username}`)
+
+  const user = await response.json()
 
   return {
-    props: {
-      level: Number(level),
-      currentExperience: Number(currentExperience),
-      challengesCompleted: Number(challengesCompleted),
-    }
+      props: {
+          user,
+          level: Number(level),
+          currentExperience: Number(currentExperience),
+          challengesCompleted: Number(challengesCompleted)
+      }
   }
+
 }

@@ -6,6 +6,13 @@ import challenges from '../../challenges.json';
 
 import { LevelUpModal } from '../components/LevelUpModal';
 
+interface ChallengesProviderProps {
+  children: ReactNode;
+  level: number;
+  currentExperience: number;
+  challengesCompleted: number;
+}
+
 interface Challenge {
   type: 'body' | 'eye';
   description: string,
@@ -14,22 +21,15 @@ interface Challenge {
 
 interface ChallengesContextData {
   level: number;
+  levelUp: () => void;  
   currentExperience: number;
   challengesCompleted: number;
-  activeChallenge: Challenge;
-  experienceToNextLevel: number;
-  levelUp: () => void;  // função que não tem retorno
   startNewChallenge: () => void;
+  activeChallenge: Challenge;
   resetChallenge: () => void;
+  experienceToNextLevel: number;
   completedChallenge: () => void;
   closeLevelUpModal: () => void;
-}
-
-interface challengesProviderProps {
-  children: ReactNode // aceita qualquer elemento filho como children, no caso um outro componente
-  level: number;
-  currentExperience: number;
-  challengesCompleted: number; 
 }
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
@@ -37,19 +37,21 @@ export const ChallengesContext = createContext({} as ChallengesContextData);
 export function ChallengesProvider({ 
   children,
   ...rest 
-} : challengesProviderProps) {
+} : ChallengesProviderProps) {
+
   const [level, setLevel] = useState(rest.level ?? 1);
   const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
+
   const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
   const [activeChallenge, setActiveChallenge] = useState(null);
+  
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
-  // Calculo baseado em jogos de rpg para fazer com que a xp necessária para o próximo nivel auemte progressivamente
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2) 
 
   useEffect(() => {
     Notification.requestPermission()
-  }, []); // toda vez que um array vazio é passado como parametro quer dizer que o useEffect só vai rodar uma única vez quando for exibido em tela
+  }, []);
 
 
   useEffect(() => {
@@ -106,21 +108,21 @@ export function ChallengesProvider({
   }
 
   return (
-    <ChallengesContext.Provider value={{
-      level,
-      currentExperience,
-      challengesCompleted,
-      activeChallenge,
-      experienceToNextLevel,
-      levelUp,
-      startNewChallenge,
-      resetChallenge,
-      completedChallenge,
-      closeLevelUpModal,
-    }}
+    <ChallengesContext.Provider 
+      value={{
+        level,
+        levelUp,
+        currentExperience,
+        challengesCompleted,
+        startNewChallenge,
+        activeChallenge,
+        resetChallenge,
+        experienceToNextLevel,
+        completedChallenge,
+        closeLevelUpModal,
+      }}
     >
       {children}
-
       { isLevelUpModalOpen && <LevelUpModal /> }
     </ChallengesContext.Provider>
   );

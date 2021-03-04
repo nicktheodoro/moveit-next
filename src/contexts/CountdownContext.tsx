@@ -34,13 +34,12 @@ export function CountdownProvider({ children } : CountdownContextProviderProps) 
   }
 
   function resetCountdown() {
-    clearTimeout(countdownTimeout); // Limpa a váriavel pra impedir que o countdown tenha o delay de 1s após a parada do contador e possibilita zerar o contador tbm
+    clearTimeout(countdownTimeout); 
     setIsActive(false);
     setHasFinished(false);
     setTime(0.1 * 60);
   }
 
-  // sintaxe do contdown
   useEffect(() => { 
     if (isActive && time > 0) { 
       countdownTimeout = setTimeout(() => { 
