@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img width="400px" src="/.github/images/logo-full.svg" />
+  <img width="400px" src="src/.github/images/logo-full.svg" />
   <br />
   <a href="https://github.com/nicktheodoro/moveit-next/blob/main/LICENSE.txt">
     <img alt="GitHub license" src="https://img.shields.io/github/license/nicktheodoro/moveit-nlw4?logo=mint&style=flat-square">
@@ -77,11 +77,8 @@ $ npm run dev
 <a href="https://github.com/nicktheodoro/">
  <img src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws" width="70px;" alt=""/>
  <br />
- <sub><b>Alexandre Costa</b></sub>
+ <sub><b>Feito com ❤️ por Nicolas Theodoro :wave::wave: Entre em contato!🚀</b></sub>
 </a>
-
-
-Feito com ❤️ por Nicolas Theodoro :wave::wave: Entre em contato!🚀
 
 <a href="https://www.linkedin.com/in/nicolas-theodoro">
 </a>
