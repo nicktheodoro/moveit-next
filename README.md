@@ -28,7 +28,7 @@
 
 
 ## :page_facing_up: Descrição
-O Move.it é um app que usa a técnica de Pomodoro, esse app faz com que pessoas que passa muito tempo na frente do computador realizar exercícios físicos.
+O Move.it é um app que usa a técnica de Pomodoro, ao terminar os 25m do coutdown são ofericidos desafios para o corpo e visão, conforme o usuário completa os desafios vai ganhando experiência e upando de level.
 
 ## :art: Layout
 Você pode acessar o Layout pelo <a href="https://www.figma.com">Figma<a> atravês <a href="https://www.figma.com/file/ge20pu3ofMOKoliUyKx1Nl/Move.it-1.0">desse link<a>.
@@ -39,9 +39,9 @@ Este projeto foi desenvolvido com as seguintes tecnologias
 - [Next.js](https://nextjs.org/)
 - [React.js](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [StyledComponents](https://styled-components.com/)
 
 ## :clipboard: Funcionalidades
+- [x] Login através do github.
 - [x] Iniciar um ciclo de 25 minutos.
 - [x] Abadornar ciclo.
 - [x] Dispara um efeito sonoro quando o ciclo chega ao fim.
@@ -76,7 +76,7 @@ $ npm run dev
 ## :man: Autor
 
 <a href="https://github.com/nicktheodoro/">
- <img src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws" width="70px;" alt=""/>
+ <img src="https://media-exp1.licdn.com/dms/image/C5603AQGuheiBjGhg1Q/profile-displayphoto-shrink_800_800/0/1598554354481?e=1620259200&v=beta&t=RnkrxYffDNSE7zRPxIsifKdwiU0GV6nqLl1JywTPJws" width="100px;" alt=""/>
  <br />
  <sub><b>Feito com ❤️ por Nicolas Theodoro :wave::wave: Entre em contato!🚀</b></sub>
 </a>
