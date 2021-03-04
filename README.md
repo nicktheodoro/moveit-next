@@ -1,6 +1,6 @@
-<header align="center">
+<h1 align="center">
   <img width="400px" src="src/.github/images/logo-full.svg" />
-</header>
+</h1>
 <p align="center">
   <a href="#page_facing_up-descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#art-Layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
